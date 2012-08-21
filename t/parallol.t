@@ -70,7 +70,7 @@ my $p;
 eval '
   use Mojo::Server::PSGI;
   use Plack::Util;
-  $p = Mojo::Server::PSGI->new;
+  $p = Mojo::Server::PSGI->new(app => app);
 ';
 
 sub t {
